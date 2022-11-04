@@ -1,0 +1,23 @@
+.social {
+  align-self: center;
+}
+
+.social__list {
+  display: grid;
+  grid-template-columns: repeat(3, 30px);
+  grid-template-rows: auto;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.social__item {
+  list-style-type: none;
+}
+
+.social__link {
+  display: block;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+}

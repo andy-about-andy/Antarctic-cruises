@@ -1,0 +1,97 @@
+.cruises {
+  padding: 95px 0 120px;
+}
+
+.cruises__wrap {
+  display: flex;
+  flex-direction: column;
+  max-width: 1230px;
+  min-width: 924px;
+}
+
+.cruises__title {
+  margin: 0 auto;
+  padding-bottom: 60px;
+  font-family: $ff-montserrat-semibold;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+}
+
+.cruises__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.cruises__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 386px;
+  padding: 35px 25px;
+  list-style-type: none;
+  color: $color-default-white;
+  background-color: $color-default-black;
+  // box-shadow: 0 4px 35px rgba(1, 28, 64, 0.15);
+
+  background-image: url("../img/cruise-atlantis-desktop.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  // background-position: 50% 0;
+
+}
+
+.cruises__item:hover {
+  background-image: none;
+  box-shadow: 0 4px 35px rgba(1, 28, 64, 0.15);
+}
+
+.cruises__item:hover .cruises__inner {
+  display: flex;
+}
+
+.cruises__title-card {
+  margin: auto 0 0;
+  font-family: $ff-montserrat-medium;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.cruises__table {
+  border-collapse: collapse;
+}
+
+.cruises__table tr {
+  display: flex;
+  flex-direction: column;
+}
+
+.cruises__table th {
+  padding: 0;
+  padding-bottom: 3px;
+  font-family: $ff-montserrat-medium;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.cruises__table td {
+  padding: 0;
+  padding-bottom: 16px;
+  font-family: $ff-montserrat;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: $color-secondary-white;
+}
+
+.cruises__inner {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+}

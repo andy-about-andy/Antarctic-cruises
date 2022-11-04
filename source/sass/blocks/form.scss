@@ -1,0 +1,78 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 403px;
+  min-width: 380px;
+  padding: 50px;
+  background: $color-default-black;
+  box-shadow: 0 4px 45px rgba(1, 28, 64, 0.15);
+}
+
+.form__text {
+  margin: 0;
+  padding-bottom: 35px;
+  font-family: $ff-montserrat-medium;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: $color-default-white;
+}
+
+.form__field {
+  margin-bottom: 20px;
+}
+
+.form__field input {
+  width: 100%;
+  height: 43px;
+  padding: 11px 16px;
+  font-size: 14px;
+  line-height: 21px;
+  color: $color-default-black;
+  background: $color-default-white;
+  border: none;
+
+  &::placeholder {
+    font-family: $ff-montserrat;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: $color-default-black;
+    opacity: 0.7;
+  }
+}
+
+.form__assent {
+  display: flex;
+  margin: 0 0 30px;
+  font-size: 10px;
+  line-height: 13px;
+  color: $color-default-white;
+}
+
+.form__assent-mark {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  background-color: $color-default-white;
+}
+
+.form__assent-label {
+  display: block;
+  padding: 2px 0 2px 6px;
+}
+
+input[type="checkbox"]:checked + .form__assent-mark::before {
+  position: absolute;
+  content: "";
+  z-index: 5;
+  top: 5px;
+  left: 4px;
+  width: 10px;
+  height: 6px;
+  background-color: $color-default-white;
+  background-image: url("../img/svg/icon-checkmark.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}

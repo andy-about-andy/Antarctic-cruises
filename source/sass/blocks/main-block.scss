@@ -1,0 +1,77 @@
+.main-block {
+  min-height: 650px;
+  margin: 0 auto;
+  // padding: 0 40px;
+  background-color: $color-default-black;
+  background-image: url("../img/background-main-desktop.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+
+  @media (min-width: $vp-1024) and (min-resolution: $retina-dppx) {
+    background-image: url("../img/background-main-desktop@2x.webp");
+  }
+
+  @include vp-1023 {
+    min-height: 638px;
+    // padding: 0 50px;
+    background-image: url("../img/background-main-tablet.webp");
+    background-position: 19.7% 0;
+
+    @include retina {
+      background-image: url("../img/background-main-tablet@2x.webp");
+    }
+  }
+
+  @include vp-767 {
+    min-height: 500px;
+    // padding: 0 25px;
+    background-image: url("../img/background-main-mobile.webp");
+    background-position: 25.5% 0;
+
+    @include retina {
+      background-image: url("../img/background-main-mobile@2x.webp");
+    }
+  }
+}
+
+.main-block__wrap {
+  position: relative;
+  top: 0;
+  left: -4.6%;
+  max-width: 800px;
+  min-width: 636px;
+  margin: 0 auto;
+  padding: 283px 0 0 0;
+
+  @include vp-1023 {
+    left: 0;
+    max-width: 720px;
+    min-width: 668px;
+    padding: 180px 0 0;
+  }
+
+  @include vp-767 {
+    max-width: 717px;
+    min-width: 270px;
+    padding: 150px 0 0;
+  }
+}
+
+.main-block__titel {
+  margin: 0;
+  font-family: $ff-montserrat-bold;
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 66px;
+  color: $color-default-white;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.main-block__text {
+  margin: 0;
+  padding: 20px 0;
+  font-size: 20px;
+  color: $color-default-white;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}

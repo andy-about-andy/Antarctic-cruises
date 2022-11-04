@@ -1,0 +1,38 @@
+.directions {
+  margin: 0 auto;
+  padding: 120px 0 145px;
+}
+
+.directions__wrap {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1260px;
+  min-width: 924px;
+}
+
+.directions__inner {
+  margin: auto 0;
+  padding-right: 20px;
+}
+
+.directions__title {
+  max-width: 512px;
+  min-width: 431px;
+  margin: 0;
+  padding: 0 0 35px;
+  font-family: $ff-montserrat-semibold;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+}
+
+.directions__text {
+  margin: 0;
+  max-width: 512px;
+  min-width: 431px;
+}
+
+.directions__content {
+  // vertical-align: middle;
+  margin: auto 0;
+}

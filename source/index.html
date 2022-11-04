@@ -26,28 +26,28 @@
                 <use href="img/sprite_auto.svg#icon-logo"></use>
               </svg>
             </a>
+            <nav class="main-nav main-nav--closed main-nav--nojs">
+              <button class="main-nav__toggle" type="button">
+                <span class="visually-hidden">Открыть меню.</span>
+              </button>
+              <div class="main-nav__wrapper">
+                <ul class="main-nav__list site-list">
+                  <li class="site-list__item">
+                    <button class="site-list__button" type="button" data-scroll-button>Преимущества</button>
+                  </li>
+                  <li class="site-list__item">
+                    <button class="site-list__button" type="button" data-scroll-button>Направления</button>
+                  </li>
+                  <li class="site-list__item">
+                    <button class="site-list__button" type="button" data-scroll-button>Ближайшие круизы</button>
+                  </li>
+                  <li class="site-list__item">
+                    <button class="site-list__button" type="button" data-scroll-button>Контакты</button>
+                  </li>
+                </ul>
+              </div>
+            </nav>
           </div>
-          <nav class="main-nav main-nav--closed main-nav--nojs">
-            <button class="main-nav__toggle" type="button">
-              <span class="visually-hidden">Открыть меню.</span>
-            </button>
-            <div class="main-nav__wrapper">
-              <ul class="main-nav__list site-list">
-                <li class="site-list__item">
-                  <button class="site-list__link" type="button" data-scroll-button>Преимущества</button>
-                </li>
-                <li class="site-list__item">
-                  <button class="site-list__link" type="button" data-scroll-button>Направления</button>
-                </li>
-                <li class="site-list__item">
-                  <button class="site-list__link" type="button" data-scroll-button>Ближайшие круизы</button>
-                </li>
-                <li class="site-list__item">
-                  <button class="site-list__link" type="button" data-scroll-button>Контакты</button>
-                </li>
-              </ul>
-            </div>
-          </nav>
         </div>
       </header>
       <main>
@@ -81,21 +81,21 @@
                 <svg class="advantages__icon" aria-hidden="true" focusable="false" width="27" height="32">
                   <use href="img/sprite_auto.svg#icon-liner"></use>
                 </svg>
-                <h3 class="advantages__title">Небольшой круизный лайнер</h3>
+                <h3 class="advantages__title-item">Небольшой круизный лайнер</h3>
                 <p class="advantages__text">Круизный лайнер, рассчитанный всего лишь на 300 гостей, поможет избежать шума и очередей и даст возможность насладиться видами и природой.</p>
               </li>
               <li class="advantages__item">
                 <svg class="advantages__icon" aria-hidden="true" focusable="false" width="38" height="32">
                   <use href="img/sprite_auto.svg#icon-all-inclusive"></use>
                 </svg>
-                <h3 class="advantages__title">Система все включено</h3>
-                <p class="advantages__text">Все наши круизы работают по системе “Все Включено”. Великолепные блюда и безлимитный бар доступны для вас 24 часа.</p>
+                <h3 class="advantages__title-item">Система все включено</h3>
+                <p class="advantages__text">Все наши круизы работают по системе&nbsp;“Все Включено”. Великолепные&nbsp;блюда и безлимитный бар доступны для вас 24 часа.</p>
               </li>
               <li class="advantages__item">
                 <svg class="advantages__icon" aria-hidden="true" focusable="false" width="44" height="32">
                   <use href="img/sprite_auto.svg#icon-tours"></use>
                 </svg>
-                <h3 class="advantages__title">Экскурсионные туры на Zodiac</h3>
+                <h3 class="advantages__title-item">Экскурсионные туры на Zodiac</h3>
                 <p class="advantages__text">Экскурсионные туры к берегам Антарктиды совершаются на оборудованных лодках типа Zodiack c опытными экскурсоводами.</p>
               </li>
             </ul>
@@ -107,7 +107,7 @@
             <ul class="cruises__list">
               <li class="cruises__item">
                 <h3 class="cruises__title-card">Круиз "Астория"</h3>
-                <div>
+                <div class="cruises__inner">
                   <table class="cruises__table">
                     <tr>
                       <th>Маршрут</th>
@@ -131,7 +131,7 @@
               </li>
               <li class="cruises__item">
                 <h3 class="cruises__title-card">Круиз "Элайн"</h3>
-                <div>
+                <div class="cruises__inner">
                   <table class="cruises__table">
                     <tr>
                       <th>Маршрут</th>
@@ -155,7 +155,7 @@
               </li>
               <li class="cruises__item">
                 <h3 class="cruises__title-card">Круиз "Атлантис"</h3>
-                <div>
+                <div class="cruises__inner">
                   <table class="cruises__table">
                     <tr>
                       <th>Маршрут</th>
@@ -179,7 +179,7 @@
               </li>
               <li class="cruises__item">
                 <h3 class="cruises__title-card">Круиз "Одиссей"</h3>
-                <div>
+                <div class="cruises__inner">
                   <table class="cruises__table">
                     <tr>
                       <th>Маршрут</th>
@@ -203,7 +203,7 @@
               </li>
               <li class="cruises__item">
                 <h3 class="cruises__title-card">Круиз "Олимпия"</h3>
-                <div>
+                <div class="cruises__inner">
                   <table class="cruises__table">
                     <tr>
                       <th>Маршрут</th>
@@ -227,7 +227,7 @@
               </li>
               <li class="cruises__item">
                 <h3 class="cruises__title-card">Круиз "Аврора"</h3>
-                <div>
+                <div class="cruises__inner">
                   <table class="cruises__table">
                     <tr>
                       <th>Маршрут</th>
@@ -251,7 +251,7 @@
               </li>
               <li class="cruises__item">
                 <h3 class="cruises__title-card">Круиз "Леонор"</h3>
-                <div>
+                <div class="cruises__inner">
                   <table class="cruises__table">
                     <tr>
                       <th>Маршрут</th>
@@ -275,7 +275,7 @@
               </li>
               <li class="cruises__item">
                 <h3 class="cruises__title-card">Круиз "Минион - 1"</h3>
-                <div>
+                <div class="cruises__inner">
                   <table class="cruises__table">
                     <tr>
                       <th>Маршрут</th>
@@ -300,14 +300,14 @@
             </ul>
           </div>
         </section>
-        <section class="form">
-          <div class="container form__wrap">
-            <div>
-              <h2 class="form__title">Раннее бронирование</h2>
-              <p class="form__text">Забронируйте тур за 3-6 месяцев
-                до даты выезда и сэкономьте до 50%</p>
+        <section class="booking">
+          <div class="container booking__wrap">
+            <div class="booking__inner">
+              <h2 class="booking__title">Раннее бронирование</h2>
+              <p class="booking__text">Забронируйте тур за 3-6 месяцев до&nbsp;даты выезда и сэкономьте до 50%</p>
             </div>
             <form class="form" action="https://echo.htmlacademy.ru" method="post">
+              <p class="form__text">Оставьте заявку и мы свяжемся с вами в ближайшее время</p>
               <div class="form__field form__field--name">
                 <label class="visually-hidden" for="form-name">Введите своё имя.</label>
                 <input type="text" id="form-name" name="name" placeholder="Имя" required>
@@ -343,64 +343,66 @@
               </p>
               <address class="contacts__address">
                 <p class="contacts__text">г. Санкт Петербург, ул. Большая Конюшенная, 19/8</p>
-                <a class="contacts__text contacts__text--link" href="tel:+78002000000">8-800-200-00-00</a>
+                <a class="contacts__text contacts__text--phone contacts__text--link" href="tel:+78002000000">8-800-200-00-00</a>
               </address>
             </div>
           </div>
         </section>
       </main>
       <footer>
-        <div class="container main-footer">
-          <div class="main-footer__wrap">
-            <a class="main-footer__link-logo" href="index.html">
-              <svg class="main-footer__logo" aria-hidden="true" focusable="false" width="70" height="38">
-                <use href="img/sprite_auto.svg#icon-logo"></use>
-              </svg>
-            </a>
-          </div>
-          <nav class="footer-nav">
-            <ul class="footer-nav__list site-list">
-              <li class="site-list__item">
-                <button class="site-list__link" type="button" data-scroll-button>Преимущества</button>
-              </li>
-              <li class="site-list__item">
-                <button class="site-list__link" type="button" data-scroll-button>Направления</button>
-              </li>
-              <li class="site-list__item">
-                <button class="site-list__link" type="button" data-scroll-button>Ближайшие круизы</button>
-              </li>
-              <li class="site-list__item">
-                <button class="site-list__link" type="button" data-scroll-button>Контакты</button>
-              </li>
-            </ul>
-          </nav>
-          <div class="main-footer__social social">
-            <ul class="social__list">
-              <li class="social__item">
-                <a class="social__link social__link--ok" href="https://htmlacademy.ru/">
-                  <span class="visually-hidden">Мы в Одноклассниках.</span>
-                  <svg class="social__icon" aria-hidden="true" focusable="false" width="12" height="20">
-                    <use href="img/sprite-auto.svg#social-icon-ok"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--dzen" href="https://dzen.ru/media/html_academy/-62277dce29ebb956014b177f">
-                  <span class="visually-hidden">Мы в Дзен.</span>
-                  <svg class="social__icon" aria-hidden="true" focusable="false" width="20" height="20">
-                    <use href="img/sprite-auto.svg#social-icon-dzen"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--reddit" href="https://htmlacademy.ru/">
-                  <span class="visually-hidden">Мы в Reddit.</span>
-                  <svg class="social__icon" aria-hidden="true" focusable="false" width="20" height="20">
-                    <use href="img/sprite-auto.svg#social-icon-reddit"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
+        <div class="main-footer">
+          <div class="container main-footer__wrap">
+            <div class="main-footer__inner">
+              <a class="main-footer__link-logo" href="index.html">
+                <svg class="main-footer__logo" aria-hidden="true" focusable="false" width="70" height="38">
+                  <use href="img/sprite_auto.svg#icon-logo"></use>
+                </svg>
+              </a>
+            </div>
+            <nav class="footer-nav">
+              <ul class="footer-nav__list site-list">
+                <li class="site-list__item">
+                  <button class="site-list__button" type="button" data-scroll-button>Преимущества</button>
+                </li>
+                <li class="site-list__item">
+                  <button class="site-list__button" type="button" data-scroll-button>Направления</button>
+                </li>
+                <li class="site-list__item">
+                  <button class="site-list__button" type="button" data-scroll-button>Ближайшие круизы</button>
+                </li>
+                <li class="site-list__item">
+                  <button class="site-list__button" type="button" data-scroll-button>Контакты</button>
+                </li>
+              </ul>
+            </nav>
+            <div class="main-footer__social social">
+              <ul class="social__list">
+                <li class="social__item">
+                  <a class="social__link social__link--ok" href="https://htmlacademy.ru/">
+                    <span class="visually-hidden">Мы в Одноклассниках.</span>
+                    <svg class="social__icon" aria-hidden="true" focusable="false" width="12" height="20">
+                      <use href="img/sprite_auto.svg#social-icon-ok"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link--dzen" href="https://dzen.ru/media/html_academy/-62277dce29ebb956014b177f">
+                    <span class="visually-hidden">Мы в Дзен.</span>
+                    <svg class="social__icon" aria-hidden="true" focusable="false" width="20" height="20">
+                      <use href="img/sprite_auto.svg#social-icon-dzen"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link--reddit" href="https://htmlacademy.ru/">
+                    <span class="visually-hidden">Мы в Reddit.</span>
+                    <svg class="social__icon" aria-hidden="true" focusable="false" width="20" height="20">
+                      <use href="img/sprite_auto.svg#social-icon-reddit"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </footer>

@@ -1,0 +1,19 @@
+.main-header {
+  position: absolute;
+  z-index: 10;
+}
+
+.main-header__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1160px;
+  min-width: 924px;
+  min-height: 108px;
+  margin: 0 auto;
+}
+
+.main-header__link-logo {
+  display: block;
+  padding: 35px 0;
+}
