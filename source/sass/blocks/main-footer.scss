@@ -1,0 +1,12 @@
+.main-footer {
+  margin: 0 auto;
+  padding: 50px 0;
+  background-color: $color-default-black;
+}
+
+.main-footer__wrap {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1260px;
+  min-width: 924px;
+}

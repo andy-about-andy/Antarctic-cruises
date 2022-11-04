@@ -1,0 +1,27 @@
+.site-list {
+  display: flex;
+  max-width: 700px;
+  min-width: 595px;
+  margin: 0;
+  padding: 0;
+}
+
+.site-list__item {
+  display: block;
+  margin-right: 33px;
+  list-style-type: none;
+
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.site-list__button {
+  vertical-align: auto;
+  padding: 0;
+  border: none;
+  background: none;
+  line-height: 20px;
+  color: $color-default-white;
+  cursor: pointer;
+}

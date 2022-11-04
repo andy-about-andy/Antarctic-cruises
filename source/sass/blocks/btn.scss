@@ -1,14 +1,16 @@
 .btn {
-  display: inline-flex;
+  display: block;
+  width: 100%;
+  min-height: 40px;
   padding: 10px 20px;
-  font-family: $ff-montserrat-medium;
+  font-family: $ff-montserrat-semibold;
   font-weight: 600;
   font-size: 14px;
   line-height: 21px;
 
-  color: $color-default-white;
+  color: $color-default-black;
 
-  background-color: $color-neon-blue;
+  background-color: $color-default-white;
   border: none;
   cursor: pointer;
 
