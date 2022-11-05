@@ -14,7 +14,7 @@
 
   @include vp-1023 {
     min-height: 588px;
-    // padding: 0 50px;
+    padding: 100px 0;
     background-image: url("../img/background-advantages-tablet.webp");
     background-position: 19.7% 0;
 
@@ -25,7 +25,7 @@
 
   @include vp-767 {
     min-height: 997px;
-    // padding: 0 25px;
+    padding: 65px 0;
     background-image: url("../img/background-advantages-mobile.webp");
     background-position: 25.5% 0;
 
@@ -40,11 +40,36 @@
   flex-direction: column;
   max-width: 1260px;
   min-width: 924px;
+
+  @include vp-1023 {
+    max-width: 933px;
+    min-width: 678px;
+  }
+
+  @include vp-767 {
+    max-width: 737px;
+    min-width: 290px;
+  }
 }
 
 .advantages__title {
   margin: 0 auto;
   padding-bottom: 60px;
+  font-family: $ff-montserrat-semibold;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+
+  @include vp-1023 {
+    font-size: 26px;
+    line-height: 39px;
+  }
+
+  // @include vp-767 {
+  //   max-width: 717px;
+  //   min-width: 270px;
+  //   padding: 150px 0 0;
+  // }
 }
 
 .advantages__list {
@@ -54,12 +79,30 @@
   gap: 40px;
   margin: 0;
   padding: 0;
+
+  @include vp-1023 {
+    gap: 30px;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+  }
 }
 
 .advantages__item {
   padding: 30px 34px 50px 30px;
   list-style-type: none;
   background-color: $color-default-white;
+
+  @include vp-1023 {
+    padding: 26px 16px 25px 20px;
+  }
+
+  // @include vp-767 {
+  //   max-width: 717px;
+  //   min-width: 270px;
+  //   padding: 150px 0 0;
+  // }
 }
 
 .advantages__title-item {
@@ -68,10 +111,65 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
+
+  @include vp-1023 {
+    margin: 24px 0 20px;
+    line-height: 25px;
+  }
+
+  // @include vp-767 {
+  //   max-width: 717px;
+  //   min-width: 270px;
+  //   padding: 150px 0 0;
+  // }
 }
 
 .advantages__text {
   margin: 0;
   font-size: 14px;
   line-height: 20px;
+}
+
+.advantages__icon {
+  width: 38px;
+  height: 32px;
+
+  @include vp-1023 {
+    width: 27px;
+    height: 26px;
+  }
+
+  // @include vp-767 {
+  //   max-width: 717px;
+  //   min-width: 270px;
+  //   padding: 150px 0 0;
+  // }
+}
+
+.advantages__icon--liner {
+  width: 27px;
+
+  @include vp-1023 {
+    width: 21px;
+  }
+
+  // @include vp-767 {
+  //   max-width: 717px;
+  //   min-width: 270px;
+  //   padding: 150px 0 0;
+  // }
+}
+
+.advantages__icon--tours {
+  width: 44px;
+
+  @include vp-1023 {
+    width: 36px;
+  }
+
+  // @include vp-767 {
+  //   max-width: 717px;
+  //   min-width: 270px;
+  //   padding: 150px 0 0;
+  // }
 }

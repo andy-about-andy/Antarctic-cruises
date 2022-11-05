@@ -2,6 +2,10 @@
   margin: 0 auto;
   padding: 50px 0;
   background-color: $color-default-black;
+
+  @include vp-767 {
+    padding: 40px 0;
+  }
 }
 
 .main-footer__wrap {
@@ -9,4 +13,48 @@
   justify-content: space-between;
   max-width: 1260px;
   min-width: 924px;
+
+  @include vp-1023 {
+    max-width: 933px;
+    min-width: 768px;
+  }
+
+  @include vp-767 {
+    flex-direction: column;
+    max-width: 737px;
+    min-width: 290px;
+  }
+}
+
+.main-footer__logo {
+  width: 70px;
+  height: 38px;
+  fill: $color-default-white;
+
+  @include vp-1023 {
+    width: 38px;
+    height: 20px;
+  }
+
+  @include vp-767 {
+    width: 42px;
+    height: 22px;
+  }
+}
+
+.main-footer__link-logo {
+  display: block;
+  width: 70px;
+  height: 38px;
+
+  @include vp-1023 {
+    width: 38px;
+    height: 20px;
+  }
+
+  // @include vp-767 {
+  //   max-width: 717px;
+  //   min-width: 270px;
+  //   padding: 150px 0 0;
+  // }
 }
