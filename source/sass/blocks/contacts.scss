@@ -1,6 +1,14 @@
 .contacts {
   margin: 0 auto;
   padding: 120px 0;
+
+  @include vp-1023 {
+    padding: 100px 0;
+  }
+
+  @include vp-767 {
+    padding: 65px 0;
+  }
 }
 
 .contacts__wrap {
@@ -8,11 +16,38 @@
   justify-content: space-between;
   max-width: 1260px;
   min-width: 924px;
+
+  @include vp-1023 {
+    max-width: 933px;
+    min-width: 678px;
+  }
+
+  @include vp-767 {
+    flex-direction: column-reverse;
+    max-width: 737px;
+    min-width: 290px;
+  }
+}
+
+.contacts__map {
+  // max-width: 560px;
+  // min-width: 460px;
+
+  // @include vp-1023 {
+  //   max-width: 400px;
+  //   min-width: 324px;
+  // }
+
+  @include vp-767 {
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 
 .contacts__map-inner {
   max-width: 560px;
   min-width: 460px;
+  height: 306px;
   margin-right: 20px;
 
   background-image: url("../img/map-desktop.webp");
@@ -25,9 +60,11 @@
   }
 
   @include vp-1023 {
+    max-width: none;
+    min-width: auto;
     width: 324px;
     height: 335px;
-    // padding: 0 50px;
+    margin-right: 30px;
     background-image: url("../img/map-tablet.webp");
     background-position: 19.7% 0;
 
@@ -37,9 +74,9 @@
   }
 
   @include vp-767 {
-    width: 290px;
+    width: 100%;
     height: 316px;
-    // padding: 0 25px;
+    margin: 0;
     background-image: url("../img/map-mobile.webp");
     background-position: 25.5% 0;
 
@@ -53,6 +90,18 @@
   max-width: 500px;
   min-width: 380px;
   margin: auto 0;
+
+  @include vp-1023 {
+    max-width: 500px;
+    min-width: 324px;
+  }
+
+  @include vp-767 {
+    max-width: 450px;
+    min-width: 290px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+  }
 }
 
 .contacts__questions {
@@ -62,6 +111,16 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
+
+  @include vp-1023 {
+    & br {
+      display: none;
+    }
+  }
+
+  @include vp-767 {
+    margin: 0 auto;
+  }
 }
 
 .contacts__text {

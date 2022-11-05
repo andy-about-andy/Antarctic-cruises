@@ -19,7 +19,7 @@
   <body>
     <div class="wrapper">
       <header>
-        <div class="container main-header">
+        <div class="container main-header main-header--nojs">
           <div class="main-header__wrap">
             <a class="main-header__link-logo">
               <svg class="main-header__logo" aria-hidden="true" focusable="false" width="70" height="38">
@@ -33,16 +33,16 @@
               <div class="main-nav__wrapper">
                 <ul class="main-nav__list site-list">
                   <li class="site-list__item">
-                    <button class="site-list__button" type="button" data-scroll-button>Преимущества</button>
+                    <a class="site-list__button site-list__button--mobile" href="#advantages">Преимущества</a>
                   </li>
                   <li class="site-list__item">
-                    <button class="site-list__button" type="button" data-scroll-button>Направления</button>
+                    <a class="site-list__button site-list__button--mobile" href="#directions">Направления</a>
                   </li>
                   <li class="site-list__item">
-                    <button class="site-list__button" type="button" data-scroll-button>Ближайшие круизы</button>
+                    <a class="site-list__button site-list__button--mobile" href="#cruise">Ближайшие круизы</a>
                   </li>
                   <li class="site-list__item">
-                    <button class="site-list__button" type="button" data-scroll-button>Контакты</button>
+                    <a class="site-list__button site-list__button--mobile" href="#contacts">Контакты</a>
                   </li>
                 </ul>
               </div>
@@ -57,10 +57,10 @@
             <p class="main-block__text">Волшебный мир айсбергов и пингвинов</p>
           </div>
         </section>
-        <section class="directions">
+        <section class="directions" id="directions">
           <div class="container directions__wrap">
             <div class="directions__inner">
-              <h2 class="directions__title">Путешествие на край Земли</h2>
+              <h2 class="directions__title">Путешествие на&nbsp;край&nbsp;Земли</h2>
               <p class="directions__text">Это волшебное путешествие поможет вам познакомиться поближе с удивительным миром Антарктики. Наш круизный лайнер отвезет вас на край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и многое другое.</p>
             </div>
             <div class="directions__content">
@@ -73,12 +73,12 @@
             </div>
           </div>
         </section>
-        <section class="advantages">
+        <section class="advantages" id="advantages">
           <div class="container advantages__wrap">
             <h2 class="advantages__title">Преимущества</h2>
             <ul class="advantages__list">
               <li class="advantages__item">
-                <svg class="advantages__icon" aria-hidden="true" focusable="false" width="27" height="32">
+                <svg class="advantages__icon advantages__icon--liner" aria-hidden="true" focusable="false" width="27" height="32">
                   <use href="img/sprite_auto.svg#icon-liner"></use>
                 </svg>
                 <h3 class="advantages__title-item">Небольшой круизный лайнер</h3>
@@ -92,7 +92,7 @@
                 <p class="advantages__text">Все наши круизы работают по системе&nbsp;“Все Включено”. Великолепные&nbsp;блюда и безлимитный бар доступны для вас 24 часа.</p>
               </li>
               <li class="advantages__item">
-                <svg class="advantages__icon" aria-hidden="true" focusable="false" width="44" height="32">
+                <svg class="advantages__icon advantages__icon--tours" aria-hidden="true" focusable="false" width="44" height="32">
                   <use href="img/sprite_auto.svg#icon-tours"></use>
                 </svg>
                 <h3 class="advantages__title-item">Экскурсионные туры на Zodiac</h3>
@@ -101,7 +101,7 @@
             </ul>
           </div>
         </section>
-        <section class="cruises">
+        <section class="cruises" id="cruise">
           <div class="container cruises__wrap">
             <h2 class="cruises__title">Ближайшие круизы</h2>
             <ul class="cruises__list">
@@ -126,7 +126,7 @@
                       <td>от 11500 $</td>
                     </tr>
                   </table>
-                  <button class="btn btn--to-book" type="submit">Забронировать</button>
+                  <a class="btn btn--to-book" href="#">Забронировать</a>
                 </div>
               </li>
               <li class="cruises__item">
@@ -150,7 +150,7 @@
                       <td>от 14500 $</td>
                     </tr>
                   </table>
-                  <button class="btn btn--to-book" type="submit">Забронировать</button>
+                  <a class="btn btn--to-book" href="#">Забронировать</a>
                 </div>
               </li>
               <li class="cruises__item">
@@ -174,7 +174,7 @@
                       <td>от 14500 $</td>
                     </tr>
                   </table>
-                  <button class="btn btn--to-book" type="submit">Забронировать</button>
+                  <a class="btn btn--to-book" href="#">Забронировать</a>
                 </div>
               </li>
               <li class="cruises__item">
@@ -198,7 +198,7 @@
                       <td>от 9700 $</td>
                     </tr>
                   </table>
-                  <button class="btn btn--to-book" type="submit">Забронировать</button>
+                  <a class="btn btn--to-book" href="#">Забронировать</a>
                 </div>
               </li>
               <li class="cruises__item">
@@ -222,7 +222,7 @@
                       <td>от 18600 $</td>
                     </tr>
                   </table>
-                  <button class="btn btn--to-book" type="submit">Забронировать</button>
+                  <a class="btn btn--to-book" href="#">Забронировать</a>
                 </div>
               </li>
               <li class="cruises__item">
@@ -246,7 +246,7 @@
                       <td>от 11700 $</td>
                     </tr>
                   </table>
-                  <button class="btn btn--to-book" type="submit">Забронировать</button>
+                  <a class="btn btn--to-book" href="#">Забронировать</a>
                 </div>
               </li>
               <li class="cruises__item">
@@ -270,7 +270,7 @@
                       <td>от 12500 $</td>
                     </tr>
                   </table>
-                  <button class="btn btn--to-book" type="submit">Забронировать</button>
+                  <a class="btn btn--to-book" href="#">Забронировать</a>
                 </div>
               </li>
               <li class="cruises__item">
@@ -294,7 +294,7 @@
                       <td>от 12300 $</td>
                     </tr>
                   </table>
-                  <button class="btn btn--to-book" type="submit">Забронировать</button>
+                  <a class="btn btn--to-book" href="#">Забронировать</a>
                 </div>
               </li>
             </ul>
@@ -304,17 +304,17 @@
           <div class="container booking__wrap">
             <div class="booking__inner">
               <h2 class="booking__title">Раннее бронирование</h2>
-              <p class="booking__text">Забронируйте тур за 3-6 месяцев до&nbsp;даты выезда и сэкономьте до 50%</p>
+              <p class="booking__text">Забронируйте тур за&nbsp;3-6&nbsp;месяцев до&nbsp;даты выезда и&nbsp;сэкономьте до&nbsp;50%</p>
             </div>
             <form class="form" action="https://echo.htmlacademy.ru" method="post">
-              <p class="form__text">Оставьте заявку и мы свяжемся с вами в ближайшее время</p>
+              <p class="form__text">Оставьте заявку и&nbsp;мы&nbsp;свяжемся с вами в ближайшее время</p>
               <div class="form__field form__field--name">
                 <label class="visually-hidden" for="form-name">Введите своё имя.</label>
                 <input type="text" id="form-name" name="name" placeholder="Имя" required>
               </div>
               <div class="form__field form__field--phone">
                 <label class="visually-hidden" for="number-phone">Введите свой номер мобильного телефона.</label>
-                <input type="tel" id="number-phone" name="number-phone" placeholder="Телефон" pattern="^\+7[\(][0-9]{3}[\)]\s?[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
+                <input type="tel" id="number-phone" name="number-phone" placeholder="Телефон" pattern="^8[0-9]{3}[0-9]{7}" required>
               </div>
               <div class="form__field form__field--email">
                 <label class="visually-hidden" for="email">Введите свой email.</label>
@@ -324,25 +324,25 @@
                 <label class="form__assent">
                   <input class="visually-hidden form__assent-input" type="checkbox" name="согласие на обработку персональных данных" checked required>
                   <span class="form__assent-mark"></span>
-                  <span class="form__assent-label">Я согласен на обработку моих персональных данных</span>
+                  <span class="form__assent-label">Я согласен на обработку моих&nbsp;персональных данных</span>
                 </label>
                 <button class="btn btn--form-send" type="submit">Оставить заявку</button>
               </div>
             </form>
           </div>
         </section>
-        <section class="contacts">
+        <section class="contacts" id="contacts">
           <h2 class="visually-hidden">Как нас найти.</h2>
-          <div class="container contacts__wrap">
-            <div class="contacts__map">
+          <div class="container contacts__wrap" data-contacts>
+            <div class="contacts__map" id="map">
               <iframe class="contacts__map-inner" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d594.1890975784023!2d30.3223513534753!3d59.93868095283173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1667553366628!5m2!1sru!2sby" width="560" height="306" style="border: 0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Карта с местом расположения офиса Круизы в Антарктику."></iframe>
             </div>
             <div class="contacts__inner">
               <p class="contacts__questions">
-                У вас ещё остались вопросы или сомнения?<br>Приезжайте к нам в офис и мы вам все расскажем.
+                У вас ещё остались вопросы или сомнения?<br> Приезжайте к нам в офис и мы вам все расскажем.
               </p>
               <address class="contacts__address">
-                <p class="contacts__text">г. Санкт Петербург, ул. Большая Конюшенная, 19/8</p>
+                <p class="contacts__text">г.&nbsp;Санкт Петербург, ул.&nbsp;Большая&nbsp;Конюшенная,&nbsp;19/8</p>
                 <a class="contacts__text contacts__text--phone contacts__text--link" href="tel:+78002000000">8-800-200-00-00</a>
               </address>
             </div>
@@ -362,16 +362,16 @@
             <nav class="footer-nav">
               <ul class="footer-nav__list site-list">
                 <li class="site-list__item">
-                  <button class="site-list__button" type="button" data-scroll-button>Преимущества</button>
+                  <a class="site-list__button" href="#advantages">Преимущества</a>
                 </li>
                 <li class="site-list__item">
-                  <button class="site-list__button" type="button" data-scroll-button>Направления</button>
+                  <a class="site-list__button" href="#directions">Направления</a>
                 </li>
                 <li class="site-list__item">
-                  <button class="site-list__button" type="button" data-scroll-button>Ближайшие круизы</button>
+                  <a class="site-list__button" href="#cruise">Ближайшие круизы</a>
                 </li>
                 <li class="site-list__item">
-                  <button class="site-list__button" type="button" data-scroll-button>Контакты</button>
+                  <a class="site-list__button" href="#contacts">Контакты</a>
                 </li>
               </ul>
             </nav>
