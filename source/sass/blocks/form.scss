@@ -4,26 +4,28 @@
   justify-content: space-between;
   max-width: 403px;
   min-width: 380px;
-  padding: 50px;
+  padding: 45px 50px 50px;
   background: $color-default-black;
   box-shadow: 0 4px 45px rgba(1, 28, 64, 0.15);
 
   @include vp-1023 {
-    max-width: 500px;
-    min-width: 403px;
+    max-width: none;
+    min-width: auto;
+    width: 403px;
     margin: 0 auto;
   }
 
   @include vp-767 {
     max-width: 737px;
     min-width: 290px;
-    padding: 40px 30px;
+    width: auto;
+    padding: 36px 30px 40px;
   }
 }
 
 .form__text {
   margin: 0;
-  padding-bottom: 35px;
+  padding-bottom: 26px;
   font-family: $ff-montserrat-medium;
   font-weight: 500;
   font-size: 18px;
@@ -33,7 +35,7 @@
   @include vp-767 {
     max-width: 717px;
     min-width: 214px;
-    // padding: 0 3px 35px;
+    padding-bottom: 27px;
     line-height: 25px;
     align-items: center;
     text-align: center;
@@ -73,6 +75,7 @@
   @include vp-767 {
     grid-template-columns: 20px auto;
     gap: 8px;
+    margin-bottom: 26px;
   }
 }
 
@@ -91,6 +94,7 @@
 
 .form__assent-label {
   display: block;
+  padding-top: 3px;
   font-size: 10px;
   line-height: 13px;
   color: $color-default-white;
@@ -98,6 +102,7 @@
 
   @include vp-767 {
     margin: auto 0;
+    padding: 0;
     line-height: 12px;
   }
 }
@@ -117,6 +122,6 @@ input[type="checkbox"]:checked + .form__assent-mark::before {
 
   @include vp-767 {
     top: 7px;
-    left: 6px;
+    left: 5px;
   }
 }
