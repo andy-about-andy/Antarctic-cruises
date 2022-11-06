@@ -1,7 +1,7 @@
 .site-list {
   display: flex;
   max-width: 700px;
-  min-width: 595px;
+  min-width: 594px;
   margin: 0;
   padding: 0;
 
@@ -23,15 +23,21 @@
   list-style-type: none;
 
   @include vp-1023 {
-    margin-right: 23px;
+    margin-right: 24px;
   }
 
   @include vp-767 {
-    margin: 0 0 18px 0;
+    margin: 0 0 26px 0;
   }
 
   &:last-child {
     margin: 0;
+  }
+}
+
+.site-list__item--footer {
+  @include vp-767 {
+    margin-bottom: 8px;
   }
 }
 
@@ -63,5 +69,12 @@
     font-size: 18px;
     line-height: 22px;
     color: $color-default-black;
+  }
+}
+
+.site-list__button--footer {
+  @include vp-1023 {
+    font-size: 12px;
+    line-height: 15px;
   }
 }

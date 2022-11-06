@@ -1,19 +1,19 @@
 .cruises {
-  padding: 95px 0 120px;
+  padding: 85px 0 120px;
 
   @include vp-1023 {
-    padding: 100px 0;
+    padding: 90px 0 100px;
   }
 
   @include vp-767 {
-    padding: 65px 0 69px;
+    padding: 56px 0 69px;
   }
 }
 
 .cruises__wrap {
   display: flex;
   flex-direction: column;
-  max-width: 1230px;
+  max-width: 1220px;
   min-width: 924px;
   padding: 0 45px;
 
@@ -32,7 +32,7 @@
 
 .cruises__title {
   margin: 0 auto;
-  padding-bottom: 60px;
+  padding-bottom: 49px;
   font-family: $ff-montserrat-semibold;
   font-weight: 600;
   font-size: 28px;
@@ -46,7 +46,7 @@
   @include vp-767 {
     font-size: 24px;
     line-height: 36px;
-    padding-bottom: 40px;
+    padding-bottom: 31px;
   }
 }
 
@@ -59,10 +59,11 @@
   padding: 0;
 
   @include vp-1023 {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   @include vp-767 {
+    grid-template-columns: 1fr;
     max-width: 717px;
     min-width: 270px;
   }
@@ -71,25 +72,36 @@
 .cruises__item {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: start;
   min-height: 386px;
-  padding: 35px 25px;
+  padding: 30px 25px 22px;
   list-style-type: none;
   color: $color-default-white;
   background-color: $color-default-black;
-  // box-shadow: 0 4px 35px rgba(1, 28, 64, 0.15);
-
-  background-image: url("../img/cruise-atlantis-desktop.webp");
+  background-image: url("../img/cruise-astoria-desktop.webp");
   background-size: cover;
   background-repeat: no-repeat;
-  // background-position: 50% 0;
+
+  @media (min-width: $vp-1024) and (min-resolution: $retina-dppx) {
+    background-image: url("../img/cruise-astoria-desktop@2x.webp");
+  }
 
   @include vp-1023 {
-    padding: 35px;
+    padding: 30px 35px 27px;
+    background-image: url("../img/cruise-astoria-tablet.webp");
+
+    @include retina {
+      background-image: url("../img/cruise-astoria-tablet@2x.webp");
+    }
   }
 
   @include vp-767 {
-    padding: 35px 25px;
+    padding: 30px 25px 18px;
+    background-image: url("../img/cruise-astoria-mobile.webp");
+
+    @include retina {
+      background-image: url("../img/cruise-astoria-mobile@2x.webp");
+    }
   }
 }
 
@@ -102,12 +114,20 @@
   display: flex;
 }
 
+.cruises__item:hover .cruises__title-card {
+  margin: 0;
+}
+
 .cruises__title-card {
-  margin: auto 0 0;
+  margin: auto 4px 0;
   font-family: $ff-montserrat-medium;
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
+
+  @include vp-1023 {
+    margin: auto 0 0;
+  }
 }
 
 .cruises__table {
@@ -121,7 +141,7 @@
 
 .cruises__table th {
   padding: 0;
-  padding-bottom: 3px;
+  padding-bottom: 1px;
   font-family: $ff-montserrat-medium;
   font-weight: 500;
   font-size: 14px;
@@ -130,7 +150,7 @@
 
 .cruises__table td {
   padding: 0;
-  padding-bottom: 16px;
+  padding-bottom: 11px;
   font-family: $ff-montserrat;
   font-weight: 400;
   font-size: 14px;
@@ -141,5 +161,184 @@
 .cruises__inner {
   display: none;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: start;
+  padding: 11px 0 0;
+}
+
+.cruises__item--elaine {
+  background-image: url("../img/cruise-elaine-desktop.webp");
+
+  @media (min-width: $vp-1024) and (min-resolution: $retina-dppx) {
+    background-image: url("../img/cruise-elaine-desktop@2x.webp");
+  }
+
+  @include vp-1023 {
+    background-image: url("../img/cruise-elaine-tablet.webp");
+
+    @include retina {
+      background-image: url("../img/cruise-elaine-tablet@2x.webp");
+    }
+  }
+
+  @include vp-767 {
+    background-image: url("../img/cruise-elaine-mobile.webp");
+
+    @include retina {
+      background-image: url("../img/cruise-elaine-mobile@2x.webp");
+    }
+  }
+}
+
+.cruises__item--atlantis {
+  background-image: url("../img/cruise-atlantis-desktop.webp");
+
+  @media (min-width: $vp-1024) and (min-resolution: $retina-dppx) {
+    background-image: url("../img/cruise-atlantis-desktop@2x.webp");
+  }
+
+  @include vp-1023 {
+    background-image: url("../img/cruise-atlantis-tablet.webp");
+
+    @include retina {
+      background-image: url("../img/cruise-atlantis-tablet@2x.webp");
+    }
+  }
+
+  @include vp-767 {
+    background-image: url("../img/cruise-atlantis-mobile.webp");
+
+    @include retina {
+      background-image: url("../img/cruise-atlantis-mobile@2x.webp");
+    }
+  }
+}
+
+.cruises__item--odysseus {
+  background-image: url("../img/cruise-odysseus-desktop.webp");
+
+  @media (min-width: $vp-1024) and (min-resolution: $retina-dppx) {
+    background-image: url("../img/cruise-odysseus-desktop@2x.webp");
+  }
+
+  @include vp-1023 {
+    background-image: url("../img/cruise-odysseus-tablet.webp");
+
+    @include retina {
+      background-image: url("../img/cruise-odysseus-tablet@2x.webp");
+    }
+  }
+
+  @include vp-767 {
+    background-image: url("../img/cruise-odysseus-mobile.webp");
+
+    @include retina {
+      background-image: url("../img/cruise-odysseus-mobile@2x.webp");
+    }
+  }
+}
+
+.cruises__item--olympia {
+  background-image: url("../img/cruise-olympia-desktop.webp");
+
+  @media (min-width: $vp-1024) and (min-resolution: $retina-dppx) {
+    background-image: url("../img/cruise-olympia-desktop@2x.webp");
+  }
+
+  @include vp-1023 {
+    background-image: url("../img/cruise-olympia-tablet.webp");
+
+    @include retina {
+      background-image: url("../img/cruise-olympia-tablet@2x.webp");
+    }
+  }
+
+  @include vp-767 {
+    background-image: url("../img/cruise-olympia-mobile.webp");
+
+    @include retina {
+      background-image: url("../img/cruise-olympia-mobile@2x.webp");
+    }
+  }
+}
+
+.cruises__item--aurora {
+  background-image: url("../img/cruise-aurora-desktop.webp");
+
+  @media (min-width: $vp-1024) and (min-resolution: $retina-dppx) {
+    background-image: url("../img/cruise-aurora-desktop@2x.webp");
+  }
+
+  @include vp-1023 {
+    background-image: url("../img/cruise-aurora-tablet.webp");
+
+    @include retina {
+      background-image: url("../img/cruise-aurora-tablet@2x.webp");
+    }
+  }
+
+  @include vp-767 {
+    background-image: url("../img/cruise-aurora-mobile.webp");
+
+    @include retina {
+      background-image: url("../img/cruise-aurora-mobile@2x.webp");
+    }
+  }
+}
+
+.cruises__item--leonor {
+  background-image: url("../img/cruise-leonor-desktop.webp");
+
+  @media (min-width: $vp-1024) and (min-resolution: $retina-dppx) {
+    background-image: url("../img/cruise-leonor-desktop@2x.webp");
+  }
+
+  @include vp-1023 {
+    background-image: url("../img/cruise-leonor-tablet.webp");
+
+    @include retina {
+      background-image: url("../img/cruise-leonor-tablet@2x.webp");
+    }
+  }
+
+  @include vp-767 {
+    background-image: url("../img/cruise-leonor-mobile.webp");
+
+    @include retina {
+      background-image: url("../img/cruise-leonor-mobile@2x.webp");
+    }
+  }
+}
+
+.cruises__item--minion {
+  background-image: url("../img/cruise-minion-desktop.webp");
+
+  @media (min-width: $vp-1024) and (min-resolution: $retina-dppx) {
+    background-image: url("../img/cruise-minion-desktop@2x.webp");
+  }
+
+  @include vp-1023 {
+    background-image: url("../img/cruise-minion-tablet.webp");
+
+    @include retina {
+      background-image: url("../img/cruise-minion-tablet@2x.webp");
+    }
+  }
+
+  @include vp-767 {
+    background-image: url("../img/cruise-minion-mobile.webp");
+
+    @include retina {
+      background-image: url("../img/cruise-minion-mobile@2x.webp");
+    }
+  }
+}
+
+.cruises__item--atlantis td,
+.cruises__item--olympia td {
+  padding-bottom: 9px;
+}
+
+.cruises__item--atlantis .btn--to-book,
+.cruises__item--olympia .btn--to-book {
+  margin-top: 3px;
 }
