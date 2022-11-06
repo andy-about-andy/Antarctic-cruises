@@ -2,7 +2,7 @@
   min-height: 555px;
   margin: 0 auto;
   padding: 50px 0;
-  background-color: $color-default-black;
+  background-color: #bfe1ff;
   background-image: url("../img/background-form-desktop.webp");
   background-size: cover;
   background-repeat: no-repeat;
@@ -16,7 +16,6 @@
     min-height: 805px;
     padding: 88px 0;
     background-image: url("../img/background-form-tablet.webp");
-    background-position: 19.7% 0;
 
     @include retina {
       background-image: url("../img/background-form-tablet@2x.webp");
@@ -27,7 +26,6 @@
     min-height: 760px;
     padding: 56px 0 69px;
     background-image: url("../img/background-form-mobile.webp");
-    background-position: 25.5% 0;
 
     @include retina {
       background-image: url("../img/background-form-mobile@2x.webp");
@@ -65,7 +63,7 @@
   }
 }
 
-.booking__title {
+.booking__inner h2 {
   max-width: 493px;
   min-width: 430px;
   margin: 0;
@@ -96,7 +94,7 @@
   }
 }
 
-.booking__text {
+.booking__inner p {
   margin: 0;
   padding: 0 0 5px;
   width: 355px;
