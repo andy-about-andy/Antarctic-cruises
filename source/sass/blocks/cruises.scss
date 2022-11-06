@@ -30,7 +30,7 @@
   }
 }
 
-.cruises__title {
+.cruises__wrap h2 {
   margin: 0 auto;
   padding-bottom: 49px;
   font-family: $ff-montserrat-semibold;
@@ -98,6 +98,7 @@
   @include vp-767 {
     padding: 30px 25px 18px;
     background-image: url("../img/cruise-astoria-mobile.webp");
+    background-position: center;
 
     @include retina {
       background-image: url("../img/cruise-astoria-mobile@2x.webp");
@@ -105,20 +106,22 @@
   }
 }
 
-.cruises__item:hover {
+.cruises__item:hover,
+.cruises__item:focus-within {
   background-image: none;
-  box-shadow: 0 4px 35px rgba(1, 28, 64, 0.15);
 }
 
-.cruises__item:hover .cruises__inner {
+.cruises__item:hover .cruises__inner,
+.cruises__item:focus-within .cruises__inner {
   display: flex;
 }
 
-.cruises__item:hover .cruises__title-card {
+.cruises__item:hover .cruises__title-card,
+.cruises__item:focus-within .cruises__title-card {
   margin: 0;
 }
 
-.cruises__title-card {
+.cruises__item h3 {
   margin: auto 4px 0;
   font-family: $ff-montserrat-medium;
   font-weight: 500;

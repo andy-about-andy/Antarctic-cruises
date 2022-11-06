@@ -23,7 +23,7 @@
   }
 }
 
-.form__text {
+.form p {
   margin: 0;
   padding-bottom: 26px;
   font-family: $ff-montserrat-medium;
@@ -124,4 +124,9 @@ input[type="checkbox"]:checked + .form__assent-mark::before {
     top: 7px;
     left: 5px;
   }
+}
+
+.form__assent-input:hover + .form__assent-mark,
+.form__assent-input:focus + .form__assent-mark {
+  opacity: 0.8;
 }
