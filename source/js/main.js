@@ -1,6 +1,6 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
-import {burger, test} from './modules/burger-menu/burger-menu';
+import {burger, hidesMenu} from './modules/burger-menu/burger-menu';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -16,12 +16,8 @@ window.addEventListener('DOMContentLoaded', () => {
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
     initModals();
-
-    // eslint-disable-next-line no-unused-expressions
-    burger;
-    // eslint-disable-next-line no-unused-expressions
-    test;
-
+    burger();
+    hidesMenu();
   });
 });
 

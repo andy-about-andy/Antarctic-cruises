@@ -649,6 +649,10 @@ button,
   font-weight: 600;
   font-size: 14px;
   line-height: 21px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   color: #011c40;
   background-color: #f9fbfd;
   border: none;
@@ -816,9 +820,11 @@ button,
 }
 
 .site-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(60px, auto))[4];
+  grid-template-columns: repeat(4, minmax(60px, auto));
+  gap: 33px;
   max-width: 700px;
   min-width: 594px;
   margin: 0;
@@ -827,12 +833,7 @@ button,
 
 .site-list__item {
   display: block;
-  margin-right: 33px;
   list-style-type: none;
-}
-
-.site-list__item:last-child {
-  margin: 0;
 }
 
 .site-list__button {
@@ -1049,8 +1050,8 @@ button,
   display: flex;
 }
 
-.cruises__item:hover .cruises__title-card,
-.cruises__item:focus-within .cruises__title-card {
+.cruises__item:hover h3,
+.cruises__item:focus-within .h3 {
   margin: 0;
 }
 
@@ -1448,6 +1449,7 @@ input[type=checkbox]:checked + .form__assent-mark::before {
   display: block;
   width: 70px;
   height: 38px;
+  margin: auto 0;
 }
 
 .social {
@@ -1644,12 +1646,9 @@ input[type=checkbox]:checked + .form__assent-mark::before {
   }
 
   .site-list {
+    gap: 24px;
     max-width: 550px;
-    min-width: 503px;
-  }
-
-  .site-list__item {
-    margin-right: 24px;
+    min-width: 441px;
   }
 
   .site-list__button {
@@ -1887,6 +1886,10 @@ input[type=checkbox]:checked + .form__assent-mark::before {
     padding-bottom: 21px;
   }
 
+  .main-footer {
+    padding: 48px 0 52px;
+  }
+
   .main-footer__wrap {
     max-width: 933px;
     min-width: 768px;
@@ -1903,7 +1906,7 @@ input[type=checkbox]:checked + .form__assent-mark::before {
   }
 
   .social {
-    padding: 2px 0 0;
+    padding: 4px 0 0;
   }
 
   .social__list {
@@ -2080,6 +2083,8 @@ input[type=checkbox]:checked + .form__assent-mark::before {
     position: absolute;
     top: 0;
     left: 20px;
+    max-width: 732px;
+    min-width: 285px;
     width: 100%;
     height: 100vh;
     background-color: #f9fbfd;
@@ -2103,10 +2108,14 @@ input[type=checkbox]:checked + .form__assent-mark::before {
   }
 
   .site-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    gap: 0;
     max-width: 550px;
     min-width: 290px;
   }
@@ -2414,7 +2423,7 @@ input[type=checkbox]:checked + .form__assent-mark::before {
   }
 
   .footer-nav {
-    margin: 24px auto 21px 0;
+    margin: 24px auto 10px 0;
   }
 }
 
