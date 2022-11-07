@@ -116,8 +116,8 @@
   display: flex;
 }
 
-.cruises__item:hover .cruises__title-card,
-.cruises__item:focus-within .cruises__title-card {
+.cruises__item:hover h3,
+.cruises__item:focus-within .h3 {
   margin: 0;
 }
 
