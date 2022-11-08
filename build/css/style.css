@@ -676,7 +676,7 @@ button,
 }
 
 .btn--to-book {
-  margin-top: 15px;
+  margin-bottom: 13px;
   text-align: center;
 }
 
@@ -1063,21 +1063,24 @@ button,
   line-height: 27px;
 }
 
-.cruises__table {
-  border-collapse: collapse;
-}
-
-.cruises__table tr {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.cruises__inner {
+  display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 100%;
+  padding: 11px 0 0;
 }
 
-.cruises__table th {
+.cruises__inner dl {
+  margin: 0;
+}
+
+.cruises__inner dt {
   padding: 0;
   padding-bottom: 1px;
   font-family: "Montserrat Medium", "Arial", sans-serif;
@@ -1086,7 +1089,8 @@ button,
   line-height: 20px;
 }
 
-.cruises__table td {
+.cruises__inner dd {
+  margin: 0;
   padding: 0;
   padding-bottom: 11px;
   font-family: "Montserrat", "Arial", sans-serif;
@@ -1096,16 +1100,8 @@ button,
   color: #d8d8d9;
 }
 
-.cruises__inner {
-  display: none;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: start;
-  padding: 11px 0 0;
+.cruises__inner dd:last-child {
+  padding: 0;
 }
 
 .cruises__item--elaine {
@@ -1599,7 +1595,17 @@ input[type=checkbox]:checked + .form__assent-mark::before {
 
 @media (max-width: 1219px) {
   .cruises__item {
-    padding: 22px 25px;
+    padding: 22px 22px;
+  }
+
+  .cruises__inner dd {
+    padding-bottom: 9px;
+  }
+}
+
+@media (max-width: 1179px) {
+  .btn--to-book {
+    margin-bottom: 8px;
   }
 }
 
@@ -1790,6 +1796,10 @@ input[type=checkbox]:checked + .form__assent-mark::before {
 
   .cruises__item h3 {
     margin: auto 0 0;
+  }
+
+  .cruises__inner dd {
+    padding-bottom: 11px;
   }
 
   .cruises__item--elaine {
@@ -2491,6 +2501,12 @@ input[type=checkbox]:checked + .form__assent-mark::before {
 
   .contacts__map-inner {
     background-image: url("../img/map-mobile@2x.webp");
+  }
+}
+
+@media (max-width: 374px) {
+  .btn--to-book {
+    margin-bottom: 16px;
   }
 }
 

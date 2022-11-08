@@ -87,7 +87,7 @@
   }
 
   @include vp-1219 {
-    padding: 22px 25px;
+    padding: 22px 22px;
   }
 
   @include vp-1124 {
@@ -145,16 +145,19 @@
   }
 }
 
-.cruises__table {
-  border-collapse: collapse;
-}
-
-.cruises__table tr {
-  display: flex;
+.cruises__inner {
+  display: none;
   flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 11px 0 0;
 }
 
-.cruises__table th {
+.cruises__inner dl {
+  margin: 0;
+}
+
+.cruises__inner dt {
   padding: 0;
   padding-bottom: 1px;
   font-family: $ff-montserrat-medium;
@@ -163,7 +166,8 @@
   line-height: 20px;
 }
 
-.cruises__table td {
+.cruises__inner dd {
+  margin: 0;
   padding: 0;
   padding-bottom: 11px;
   font-family: $ff-montserrat;
@@ -171,13 +175,18 @@
   font-size: 14px;
   line-height: 20px;
   color: $color-secondary-white;
+
+  @include vp-1219 {
+    padding-bottom: 9px;
+  }
+
+  @include vp-1023 {
+    padding-bottom: 11px;
+  }
 }
 
-.cruises__inner {
-  display: none;
-  flex-direction: column;
-  justify-content: start;
-  padding: 11px 0 0;
+.cruises__inner dd:last-child {
+  padding: 0;
 }
 
 .cruises__item--elaine {
