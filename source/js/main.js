@@ -1,6 +1,6 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
-import {burger, hidesMenu} from './modules/burger-menu/burger-menu';
+import {burger, hidesMenu, hidesMenuOverlay} from './modules/burger-menu/burger-menu';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -18,6 +18,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initModals();
     burger();
     hidesMenu();
+    hidesMenuOverlay();
   });
 });
 
