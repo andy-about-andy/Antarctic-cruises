@@ -33,11 +33,11 @@
 }
 
 .btn--to-book {
-  margin-bottom: 13px;
+  margin: 26px 0 12px;
   text-align: center;
 
-  @include vp-1179 {
-    margin-bottom: 8px;
+  @include vp-1023 {
+    margin-bottom: 6px;
   }
 
   @include vp-374 {
