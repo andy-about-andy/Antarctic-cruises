@@ -587,14 +587,6 @@ button,
   flex-grow: 1;
 }
 
-.rouble {
-  font-family: "Montserrat", "Arial", sans-serif;
-  /* stylelint-disable */
-  text-transform: lowercase !important;
-  font-weight: 400 !important;
-  /* stylelint-enable */
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -2001,12 +1993,13 @@ input[type=checkbox]:checked + .form__assent-mark::before {
     max-width: 732px;
     min-width: 285px;
     height: 100vh;
+    border-top: 50px solid transparent;
     background-color: #f9fbfd;
   }
 
   .main-nav__list {
     position: absolute;
-    top: 75px;
+    top: 25px;
     left: 15px;
   }
 
